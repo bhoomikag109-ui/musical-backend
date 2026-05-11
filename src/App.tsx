@@ -4,7 +4,7 @@ function App() {
   const [products, setProducts] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://musical-backend-e7vf.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
